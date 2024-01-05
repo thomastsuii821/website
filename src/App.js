@@ -1,33 +1,18 @@
 import "./App.css";
-import Title from "./Title.js";
-import HeaderBar from "./headerBar.js";
 import About from "./about.js";
 import Project from "./Project.js";
+import Home from "./Home.js";
+import HeaderBar from "./headerBar.js";
 
 function App() {
   return (
     <>
-      <div className="section1" id="home">
-        <div className="topBar">
-          <HeaderBar></HeaderBar>
-        </div>
-        <div className="page">
-          <Title></Title>
-        </div>
-        <a href="#about">
-          <div className="arrow">
-            <span></span>
-            <span></span>
-            <span></span>
-          </div>
-        </a>
-      </div>
-      <div className="section2">
+      <section className="whole">
+        <HeaderBar></HeaderBar>
+        <Home></Home>
         <About></About>
-      </div>
-      <div className="section3">
         <Project></Project>
-      </div>
+      </section>
     </>
   );
 }

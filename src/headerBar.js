@@ -2,23 +2,26 @@ import React from "react";
 
 function HeaderBar() {
   return (
-    <div className="bar">
-      <a href="#home">
-        <button className="barButton">Home</button>
-      </a>
-      <div className="divider"></div>
-      <a href="#about">
-        <button className="barButton">About</button>
-      </a>
-      <div className="divider"></div>
-      <a>
-        <button className="barButton">Projects</button>
-      </a>
-      <div className="divider"></div>
-      <a>
-        <button className="barButton">Contact</button>
-      </a>
-    </div>
+    <>
+      <div className="wrapper">
+        <ul className="bar">
+          <li className="logo">THOMAS</li>
+          <li>
+            <a href="#home">HOME</a>
+          </li>
+          <li>
+            <a href="#about">ABOUT</a>
+          </li>
+          <li>
+            <a href="#project">PROJECTS</a>
+          </li>
+          <li>
+            <a>CONTACT</a>
+          </li>
+        </ul>
+        <div className="divider bar"></div>
+      </div>
+    </>
   );
 }
 
